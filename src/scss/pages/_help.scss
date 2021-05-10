@@ -1,0 +1,116 @@
+@import '../components/mixins';
+@import '../components/needs';
+
+.help {
+  &__content {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__title {
+      font-size: 24px;
+      font-weight: bold;
+      margin: 0 0 10px 0;
+    }
+
+    &__content {
+      width: 680px;
+
+      &__form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .margin-auto {
+          width: 100%;
+          text-align: center;
+
+          &.red {
+            color: $c5;
+            text-align: center;
+            width: 98%;
+            font-size: 12px;
+            font-weight: 600;
+          }
+        }
+
+        &__name,
+        &__email,
+        &__msg {
+          color: $c1;
+          margin-bottom: 10px;
+          border: 1px solid $c2;
+          padding: 5px 10px;
+          font-size: 15px;
+          line-height: 1.4em;
+
+          &:focus {
+            border-style: solid;
+            border-color: $c3;
+            color: $c4;
+          }
+
+          &.error {
+            border-color: $c5;
+            border-style: solid;
+            background: $c6;
+            color: $c7;
+
+            &:focus {
+              border-color: $c5;
+              color: $c7;
+            }
+          }
+        }
+
+        &__name,
+        &__email {
+          width: 45%;
+        }
+
+        &__msg {
+          width: 100%;
+          min-height: 150px;
+          max-height: 400px;
+        }
+
+        &__agreement {
+          &__text {
+            font-size: 12px;
+          }
+        }
+
+        &__btn {
+          color: #fff;
+          margin: 20px 0;
+          padding: 10px;
+          font-size: 12px;
+          font-weight: 600;
+          border: solid 1px #f9f9f9;
+          border-radius: 5px;
+          background: $c8;
+          width: 680px;
+
+          &:hover {
+            background: $c9;
+            cursor: pointer;
+          }
+
+          &:active,
+          &:focus {
+            outline: none;
+          }
+
+          &.blocked {
+            background: $c10;
+
+            &:hover {
+              cursor: default;
+            }
+          }
+        }
+      }
+    }
+  }
+}

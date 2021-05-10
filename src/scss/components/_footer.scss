@@ -1,0 +1,54 @@
+@import './mixins';
+@import './needs';
+
+.footer {
+  width: 100%;
+  background-color: $c11;
+  color: $c12;
+  font-size: 14px;
+
+  a {
+    &:link {
+      color: $c13;
+    }
+
+    &:visited {
+      color: $c14;
+    }
+
+    &:hover {
+      color: $c9;
+    }
+  }
+
+  &__content {
+    padding: 0 10%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    &__tab {
+      width: 24%;
+
+      &__logo {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  &__nav {
+    list-style-type: none;
+
+    &__item {
+      margin: 0 0 10px 0;
+    }
+
+    &__link {
+      text-decoration: none;
+      font-weight: 400;
+    }
+  }
+}

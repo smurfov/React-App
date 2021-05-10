@@ -1,0 +1,31 @@
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  font-family: Arial;
+}
+
+.wrapper {
+  max-width: 960px;
+  min-height: 500px;
+  margin: auto;
+}
+
+//colors
+$white: #fff;
+$c1: #676767;
+$c2: #ccc;
+$c3: #bababa;
+$c4: #444;
+$c5: #973D3D;
+$c6: #F0BEBE;
+$c7: #A35959;
+$c8: #3F51B5;
+$c9: #E27715;
+$c10: #DBDBDB;
+$c11: #0e1824;
+$c12: #8d8d91;
+$c13: #c0c0c2;
+$c14: #737378;

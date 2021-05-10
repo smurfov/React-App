@@ -1,0 +1,49 @@
+@import './mixins';
+@import './needs';
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+
+  &__logo img {
+    height: 50px;
+  }
+
+  &__nav {
+    margin: 0;
+    padding: 4px;
+
+    &__list {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+    }
+
+    &__item {
+      font-weight: 600;
+      font-size: 12px;
+      padding: 10px;
+      cursor: pointer;
+      padding: 10px 30px;
+      margin: 0;
+      background-color: $c8;
+      border-radius: 5px;
+
+      &:hover {
+        background-color: $c9;
+      }
+    }
+
+    &__link {
+      text-decoration: none;
+      vertical-align: middle;
+      color: $white;
+    }
+  }
+}
+
+.content {
+  padding-top: 50px;
+}
